@@ -1,0 +1,22 @@
+{
+  "id": "mrr-widget",
+  "name": "Mrr Widget",
+  "version": "1.0.0",
+  "description": "Интерактивный котик: мурчит, подпрыгивает, настраивается через ПКМ.",
+  "author": "ark1n_18",
+  "main": "index.js",
+  "api": 4,
+  "permissions": ["ui"],
+  "settings": [
+    { "key": "imagePath",        "label": "Картинка (путь от папки плагина)", "type": "text",   "default": "assets/cat.png" },
+    { "key": "purrSounds",       "label": "Звуки мурчания (через запятую)",    "type": "text",   "default": "assets/purr1.mp3,assets/purr2.mp3" },
+    { "key": "meowSounds",       "label": "Звуки прыжка (через запятую)",      "type": "text",   "default": "assets/meow.mp3" },
+    { "key": "purrTexts",        "label": "Тексты при клике (через запятую)",  "type": "text",   "default": "Мррр,Няя,Мяу,Фыр фыр,Мюю,Мырр,Мсяя" },
+    { "key": "bounceTexts",      "label": "Тексты при прыжке (через запятую)", "type": "text",   "default": "МНЯЯ!,Пиии!,Фыр-фыр-мяу!" },
+    { "key": "clicksPerBounce",  "label": "Кликов до прыжка",                  "type": "number", "min": 1, "max": 10, "default": 3 },
+    { "key": "defaultSize",      "label": "Размер по умолчанию (px)",          "type": "number", "min": 40, "max": 400, "default": 120 },
+    { "key": "minSize",          "label": "Мин. размер (px)",                  "type": "number", "min": 20, "max": 200, "default": 60 },
+    { "key": "maxSize",          "label": "Макс. размер (px)",                 "type": "number", "min": 100, "max": 600, "default": 240 },
+    { "key": "soundEnabled",     "label": "Звуки включены",                    "type": "toggle", "default": true }
+  ]
+}
